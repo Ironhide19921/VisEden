@@ -7,7 +7,7 @@ const obtener = async (req = request, res = response) => {
     const { destinations } = req.body;
     try {
         const instance = axios.create({
-          baseURL: `http://190.210.88.30/neoapi/webservice.asmx/ExecuteTask01?idTask=${chatbot_code}&param1=${JSON.stringify(
+          baseURL: `http://200.10.111.3/neoapi/webservice.asmx/ExecuteTask01?idTask=${chatbot_code}&param1=${JSON.stringify(
             req.body
           )}`,
         });
