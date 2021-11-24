@@ -60,34 +60,6 @@ const envio = async (req = request, res = response) => {
   //         last_name: "Weaver",
   //         avatar: "https://reqres.in/img/faces/2-image.jpg",
   //       },
-  //       {
-  //         id: 3,
-  //         email: "emma.wong@reqres.in",
-  //         first_name: "Emma",
-  //         last_name: "Wong",
-  //         avatar: "https://reqres.in/img/faces/3-image.jpg",
-  //       },
-  //       {
-  //         id: 4,
-  //         email: "eve.holt@reqres.in",
-  //         first_name: "Eve",
-  //         last_name: "Holt",
-  //         avatar: "https://reqres.in/img/faces/4-image.jpg",
-  //       },
-  //       {
-  //         id: 5,
-  //         email: "charles.morris@reqres.in",
-  //         first_name: "Charles",
-  //         last_name: "Morris",
-  //         avatar: "https://reqres.in/img/faces/5-image.jpg",
-  //       },
-  //       {
-  //         id: 6,
-  //         email: "tracey.ramos@reqres.in",
-  //         first_name: "Tracey",
-  //         last_name: "Ramos",
-  //         avatar: "https://reqres.in/img/faces/6-image.jpg",
-  //       },
   //     ],
   //     support: {
   //       url: "https://reqres.in/#support-heading",
@@ -203,6 +175,8 @@ const envio = async (req = request, res = response) => {
   //   });
 };
 
+
 module.exports = {
   envio,
 };
+

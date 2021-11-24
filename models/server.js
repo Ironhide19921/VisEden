@@ -8,12 +8,8 @@ class Server {
 
     this.paths = {
       envio: "/api/envio",
-      // auth:       '/api/auth',
-      // buscar:     '/api/buscar',
-      // categorias: '/api/categorias',
-      // productos:  '/api/productos',
-      // usuarios:   '/api/usuarios',
-      // uploads:  '/api/uploads'
+      estadoDeEnvio: "/api/estadoDeEnvio",
+      obtener:       '/api/obtener'
     };
 
     // Connectar a db
@@ -52,12 +48,10 @@ class Server {
 
   routes() {
     this.app.use(this.paths.envio, require("../routes/envio"));
+    this.app.use(this.paths.estadoDeEnvio, require("../routes/estadoDeEnvio"));
+    this.app.use(this.paths.obtener, require("../routes/obtener"));
     // this.app.use(this.paths.auth, require("../routes/auth"));
-    // this.app.use(this.paths.buscar, require("../routes/buscar"));
-    // this.app.use(this.paths.categorias, require("../routes/categorias"));
-    // this.app.use(this.paths.productos, require("../routes/productos"));
-    // this.app.use(this.paths.usuarios, require("../routes/usuarios"));
-    // this.app.use(this.paths.uploads, require("../routes/uploads"));
+
   }
 
   listen() {
